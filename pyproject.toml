@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "shap_visualization"
+version = "0.1.0"
+description = ""
+authors = ["Patrick Lombardo <plombardo@opentable.com>"]
+
+[[tool.poetry.source]]
+name = "artifactory"
+url = "https://artifactory.otenv.com/artifactory/api/pypi/pypi-virtual/simple"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.8, <3.9"
+featurizer = "^1.0.15"
+modelwrapper = "^1.0.1"
+jupyter = "^1.0.0"
+pyspark = "^3.2.1"
+interpret = "^0.2.7"
+xgboost = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
